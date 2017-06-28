@@ -13,6 +13,8 @@ virtualenv
 httpie
 
 
+gunicorn --workers=2  --worker-class="egg:meinheld#gunicorn_worker" things:app
+
 ## gunicorn things:app
 
 ## 模拟手游统计数据收集接口
